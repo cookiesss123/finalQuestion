@@ -85,7 +85,6 @@
                               <label :for="product + index" class="col-8 mb-0">{{ index + 1 }}. {{ product.title }} ： {{ product.num }}{{ product.unit }} / {{ product.price }} 元</label>
                               <div class="col-4">
                                 <div class="input-group input-group-sm">
-                                  <!-- 這裡的 group 絕對是暫存 一開始設定的1要另外放不能改到暫存的  問題不在這 改什麼都一樣-->
                                   <select name="" :id="product + index" class="form-select" v-model="tempRecipe.relativeProducts[index].group">
                                     <option v-for="num in 20" :key="num + 34534" :value="num">{{ num }}</option>
                                   </select>
